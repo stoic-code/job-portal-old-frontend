@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+.active {
+  color: black;
+  text-decoration: underline 0.2rem;
+
+  text-underline-offset: 5px;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rc-pagination {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.rc-pagination li {
+  cursor: pointer;
+  border: 1px solid #338573;
+  padding: 0.5rem;
+}
+.rc-pagination-options {
+  display: none;
+}
+.rc-pagination-item-active {
+  background-color: #338573;
+}
+.rc-pagination-disabled {
+  cursor: no-drop !important;
+  opacity: 0.5;
+}
